@@ -1,0 +1,50 @@
+/* Tile container styling */
+.tile-container {
+  border: 2px solid #adadad;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px; /* Increase margin for more space between tiles */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #e5e5e5;
+  cursor: pointer; /* Make the tile look like a button */
+  transition: all 0.3s; /* Smooth transition for hover effect */
+}
+
+.tile-container:hover {
+  transform: scale(1.03);
+}
+
+/* Tile title styling */
+.tile-title {
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Add space between title and actions */
+  text-align: center;
+  word-break: break-word; /* Ensure long words break within the tile */
+  white-space: normal; /* Allow text to wrap */
+}
+
+/* Tile actions styling */
+.tile-actions {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+
+/* Container for tiles */
+.tiles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Add space between tiles */
+  justify-content: center; /* Center the tiles horizontally */
+  padding: 20px; /* Add padding to ensure tiles are not cut off */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  box-shadow: 0 -10px 5px -5px gray;
+}

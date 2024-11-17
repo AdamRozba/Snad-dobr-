@@ -1,0 +1,97 @@
+/* Different sections of app */
+body {
+  background-color: #e5e5e5;
+}
+/* Header section styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 10px 5px -5px gray;
+}
+
+/* App name styling within the header */
+.header .app-name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Toolbar section styling */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* List name styling within the toolbar */
+.toolbar .list-name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  /* App name styling for smaller screens */
+  .header .app-name {
+    font-size: 16px;
+  }
+
+  /* User buttons styling for smaller screens */
+  .header .user-buttons button {
+    padding: 5px 10px;
+  }
+
+  /* Hide icon in app name for smaller screens */
+  .header .app-name .icon {
+    display: none;
+  }
+
+  /* Toolbar styling for smaller screens */
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Toolbar div styling for smaller screens */
+  .toolbar > div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* List name styling for smaller screens */
+  .toolbar .list-name {
+    font-size: 20px;
+  }
+
+  /* Edit buttons styling for smaller screens */
+  .toolbar .edit-buttons {
+    margin-left: 10px;
+  }
+
+  /* Toggle buttons styling for smaller screens */
+  .toolbar .toggle-buttons {
+    text-align: center;
+  }
+}
+
+/* List name styling in the toolbar */
+.list-name {
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size as needed */
+  text-align: center;
+  word-break: break-word; /* Ensure long words break within the container */
+  white-space: normal; /* Allow text to wrap */
+}
+
+@media (max-width: 500px) {
+  .tiles-container {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    justify-items: center; /* Center the tiles horizontally */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

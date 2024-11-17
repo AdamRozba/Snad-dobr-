@@ -1,0 +1,38 @@
+/* Item container styling */
+.item-container {
+  border: 2px solid #adadad;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field styling within item container */
+.item-container input {
+  width: 50%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Placeholder styling for input fields */
+.item-container input::placeholder {
+  color: #adadad;
+  text-align: center;
+}
+
+/* Input field focus state styling */
+.item-container input:focus {
+  border-bottom: none;
+}
+
+/* Styling for input fields when they are not showing placeholder text */
+.item-container input:not(:placeholder-shown) {
+  border-bottom: none;
+}
